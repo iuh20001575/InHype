@@ -37,3 +37,7 @@ a {
 .gap + .gap {
     margin-left: 7px;
 }
+
+.no-hover--color:hover {
+    color: var(--text-color) !important;
+}
