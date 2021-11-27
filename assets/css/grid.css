@@ -81,7 +81,9 @@
     max-width: 100%;
 }
 
+
 /* OFFSET */
+
 .mb-o-1 {
     margin-left: 8.33333%;
 }
@@ -98,7 +100,10 @@
     margin-left: 33.33333%;
 }
 
+
 /* PC trung */
+
+
 /* @media (min-width: 1023px) and (max-width: 1239px) {
     .wide {
         width: 984px;
@@ -149,76 +154,85 @@
     }
 } */
 
+
 /* Màn hình cỡ lớn */
+
 @media (min-width: 1240px) {
     .row {
         margin-left: -15px;
         margin-right: -15px;
     }
-
     .col {
         padding-left: 15px;
         padding-right: 15px;
     }
-
     .tv-0 {
         display: none;
     }
-    
     .tv-1 {
         display: block;
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
     }
-    
     .tv-2 {
         display: block;
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    
+    .tv-p-20 {
+        display: block;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
     .tv-3 {
         display: block;
         flex: 0 0 25%;
         max-width: 25%;
     }
-
     .tv-4 {
         display: block;
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
-    
+    .tv-5 {
+        display: block;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
     .tv-6 {
         display: block;
         flex: 0 0 50%;
         max-width: 50%;
     }
-
-    .tv-9{
+    .tv-7 {
+        display: block;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .tv-8 {
+        display: block;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .tv-9 {
         display: block;
         flex: 0 0 75%;
         max-width: 75%;
     }
-
     .tv-12 {
         display: block;
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .tv-o-1 {
         margin-left: 8.33333%;
     }
-    
     .tv-o-2 {
         margin-left: 16.66667%;
     }
-    
     .tv-o-3 {
         margin-left: 25%;
     }
-    
     .tv-o-4 {
         margin-left: 33.33333%;
     }
@@ -226,168 +240,181 @@
 
 
 /* Màn hình PC tầm trung */
+
 @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
         width: 927px;
     }
-
     .row {
         margin-left: -15px;
         margin-right: -15px;
     }
-
     .col {
         padding-left: 15px;
         padding-right: 15px;
     }
-
     .pc-0 {
         display: none !important;
     }
-    
     .pc-1 {
         display: block;
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
     }
-    
     .pc-2 {
         display: block;
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    
+    .pc-p-20 {
+        display: block;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
     .pc-3 {
         display: block;
         flex: 0 0 25%;
         max-width: 25%;
     }
-    
     .pc-4 {
         display: block;
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
-
+    .pc-5 {
+        display: block;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
     .pc-6 {
         display: block;
         flex: 0 0 50%;
         max-width: 50%;
     }
-
-    .pc-9{
+    .pc-7 {
+        display: block;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .pc-8 {
+        display: block;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .pc-9 {
         display: block;
         flex: 0 0 75%;
         max-width: 75%;
     }
-
-    .pc-12{
+    .pc-12 {
         display: block;
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .pc-o-1 {
         margin-left: 8.33333%;
     }
-    
     .pc-o-2 {
         margin-left: 16.66667%;
     }
-    
     .pc-o-3 {
         margin-left: 25%;
     }
-    
     .pc-o-4 {
         margin-left: 33.33333%;
     }
 }
 
+
 /* Tablet */
+
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 700px;
     }
-
     .row {
         margin-left: -6px;
         margin-right: -6px;
     }
-
     .col {
         padding-left: 6px;
         padding-right: 6px;
     }
-
     .tl-0 {
         display: none !important;
     }
-    
     .tl-1 {
         display: block;
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
     }
-    
     .tl-2 {
         display: block;
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-    
+    .tl-p-20 {
+        display: block;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
     .tl-3 {
         display: block;
         flex: 0 0 25%;
         max-width: 25%;
     }
-    
     .tl-4 {
         display: block;
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
-
+    .tl-5 {
+        display: block;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
     .tl-6 {
         display: block;
         flex: 0 0 50%;
         max-width: 50%;
     }
-
+    .tl-7 {
+        display: block;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
     .tl-12 {
         display: block;
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .tl-o-1 {
         margin-left: 8.33333%;
     }
-    
     .tl-o-2 {
         margin-left: 16.66667%;
     }
-    
     .tl-o-3 {
         margin-left: 25%;
     }
-    
     .tl-o-4 {
         margin-left: 33.33333%;
     }
 }
 
+
 /* Mobile */
+
 @media (max-width: 739px) {
     .wide {
         width: 90%;
     }
-
-    .grid.wide > .row {
+    .grid.wide>.row {
         margin-left: 4px;
         margin-right: 4px;
-    }    
+    }
 }
+
 
 /* @media (min-width: 740px) {
     .row {
@@ -400,6 +427,7 @@
         padding-right: 8px;
     }
 } */
+
 
 /* @media (min-width: 1113px) {
     .row {
