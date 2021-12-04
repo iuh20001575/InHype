@@ -1,0 +1,202 @@
+@media (max-width: 1250px) {
+    .heading__logo img {
+        height: 30px;
+    }
+    .fixed-income .content-img--link {
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hidden-element {
+        display: none !important;
+    }
+    .show-element {
+        display: block !important;
+    }
+    .heading {
+        justify-content: unset;
+        border: none;
+    }
+    .heading__btn {
+        margin-left: auto;
+    }
+    .heading__menu-list {
+        display: block;
+        height: 100%;
+    }
+    .heading__menu {
+        height: 0;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    @keyframes show {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100%;
+        }
+    }
+    .heading__menu-item>a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub__item-list,
+    .heading__menu-sub-item,
+    .sub__menu {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: unset;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 0;
+        position: static;
+    }
+    .sub__item-list.active,
+    .sub__menu.active {
+        padding-left: 12px;
+    }
+    .heading__menu-sub-item.active {
+        padding: 0 14px;
+    }
+    .footer-connect {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-connect__social i {
+        margin: 40px 12px;
+    }
+    .quick-take-img__item-img img {
+        width: 100%;
+    }
+    .slick-list {
+        overflow: unset;
+    }
+    .quick-take__item .content-info {
+        margin-bottom: 46px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-element--tl {
+        display: none !important;
+    }
+    .show-element--tl {
+        display: block !important;
+    }
+    .mt-40 {
+        margin-top: 40px;
+    }
+    .content__title {
+        margin-bottom: 0;
+    }
+    .content {
+        padding-top: 0;
+    }
+    .weekends .content-item,
+    .content .content-item,
+    .inhype-businessweek .content-item,
+    .story .content-item,
+    .content .more-btn {
+        margin-top: 40px;
+    }
+    .inhype-businessweek__btn {
+        margin-top: 48px;
+    }
+    .slick-slider__col5 .content-item {
+        margin: 40px 6px 0;
+    }
+    .quick-take__item-img {
+        height: auto;
+        width: 100%;
+        background-position: center;
+        background-origin: cover;
+        background-size: cover;
+    }
+    .fixed-income .border-line {
+        margin-top: 0 !important;
+    }
+    .footer-connect__text {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 740px) {
+     :root {
+        --margin-top: 40px;
+    }
+    .selected__item .content-img--link,
+    .hidden-element--mb {
+        display: none !important;
+    }
+    .show-element--mb {
+        display: block !important;
+    }
+    .mt-40--tl {
+        margin-top: 40px !important;
+    }
+    .heading__logo img {
+        height: 20px;
+    }
+    .posts__item .content-img--link {
+        width: 100%;
+    }
+    .header .heading__menu-item .content-item {
+        margin-bottom: 35px;
+    }
+    .politics .content__title,
+    .inhype-businessweek .content__title,
+    .story .content__title {
+        margin-bottom: 0;
+    }
+    .content .content-list .content-item:first-child,
+    .inhype-businessweek .content-item,
+    .story .content-item {
+        margin-top: 40px;
+    }
+    .weekends__img,
+    .weekends__item {
+        margin-top: 48px;
+    }
+    .slick-slider__col5 {
+        margin: 0 -15px;
+        overflow: hidden;
+        width: unset;
+    }
+    .content {
+        padding-top: 0;
+    }
+    .selected__item-info {
+        margin-left: 0;
+    }
+    .markets .content-info {
+        margin-bottom: 48px;
+    }
+    .markets .content-tags {
+        margin-top: 0;
+    }
+    .markets .border-line {
+        margin-top: 0 !important;
+    }
+    .posts .posts__item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .hidden-element--mb {
+        display: none !important;
+    }
+    .show-element--mb {
+        display: block !important;
+    }
+    .heading__logo img {
+        height: 20px;
+    }
+    .posts__item .content-img--link {
+        width: 100%;
+    }
+}

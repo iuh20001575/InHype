@@ -3,12 +3,18 @@
     --height-heading: 120px;
     --height-btn: 44px;
     --font-size: 1.6em;
+    --height-50px: 50px;
+    --margin-top: 60px;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,10 +29,6 @@ li {
 a {
     text-decoration: none;
     color: #000;
-}
-
-.mt-60 {
-    margin-top: 60px;
 }
 
 .half {
@@ -46,7 +48,15 @@ a {
 }
 
 .animation-show {
-    animation: animationShow linear 1s;
+    animation: animationShow linear 0.3s;
+}
+
+.background-color-white {
+    background-color: #fff !important;
+}
+
+.color-white {
+    color: #fff !important;
 }
 
 @keyframes animationShow {
@@ -58,4 +68,38 @@ a {
         opacity: 1;
         visibility: visible;
     }
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: var(--height-50px);
+    height: var(--height-50px);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    z-index: 2;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.slick-arrow:hover {
+    background-color: #48494b;
+}
+
+.slick-next {
+    left: calc(var(--height-50px) + 25px);
+}
+
+.border-line {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.box-100px {
+    height: 100px;
+    width: 100%;
 }

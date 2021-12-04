@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
     <div class="main">
-        <nav class="navbar">
+        <nav class="navbar hidden-element">
             <div class="grid wide">
                 <div class="wapper--menu">
                     <ul class="menu">
@@ -63,7 +65,9 @@
         <div class="header">
             <div class="grid wide">
                 <header class="heading">
-                    <div class="heading__social">
+                    <div class="heading__bars show-element"><i class="fas fa-bars"></i></div>
+
+                    <div class="heading__social hidden-element">
                         <a href="#">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -83,6 +87,20 @@
                     </a>
 
                     <div class="heading__btn">
+                        <div class="heading__social show-element--tl show-element--mb">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
                         <input type="text" name="" class="search--input" placeholder="Type keyword(s) here...">
                         <div class="heading__btn-item heading__btn--search">
                             <i class="fas fa-search"></i>
@@ -98,465 +116,477 @@
                 </header>
 
                 <div class="heading__menu">
-                    <li class="heading__menu-item">
-                        <a href="">
-                            Demos
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="sub__menu">
-                            <li class="sub__item">
+                    <div class="grid wide">
+                        <div class="heading__menu-list">
+                            <li class="heading__menu-item">
                                 <a href="">
-                                    Demos
-                                    <i class="fas fa-angle-right"></i>
+                                    <div>
+                                        Demos
+                                    </div>
+                                    <i class="fas fa-chevron-down"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
+                                <ul class="sub__menu">
+                                    <li class="sub__item">
                                         <a href="">
-                                            Homepage 1
+                                            Demos
+                                            <i class="fas fa-angle-right"></i>
                                         </a>
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 1
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 2
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 3
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 4
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 5
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 6
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 7
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 8
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 9
+                                                </a>
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
+                                                    Homepage 10
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li class="sub__item-item">
+                                    <li class="sub__item">
                                         <a href="">
-                                            Homepage 2
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 3
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 4
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 5
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 6
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 7
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 8
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 9
-                                        </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
-                                            Homepage 10
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
                                     Large Post then Grid
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Large Overlay then Grid
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Large Post then List
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Overlay then List
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Mixed Overlays
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Mixed Larger then Grid
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Grid
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     List
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Classic
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Overlay
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                </ul>
-                            </li>
-                            <li class="sub__item">
-                                <a href="">
+                                    <li class="sub__item">
+                                        <a href="">
                                     Masonry
                                     <i class="fas fa-angle-right"></i>
                                 </a>
-                                <ul class="sub__item-list">
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                        <ul class="sub__item-list">
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Fullwidth
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Left Sidebar
                                         </a>
-                                    </li>
-                                    <li class="sub__item-item">
-                                        <a href="">
+                                            </li>
+                                            <li class="sub__item-item">
+                                                <a href="">
                                             Right Sidebar
                                         </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
-                        </ul>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
-                            Features
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
-                            Politics
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
+                            <li class="heading__menu-item">
+                                <a href="">
+                                    <div>
+                                        Features
+                                    </div>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li class="heading__menu-item">
+                                <a href="">
+                                    <div>
+                                        Politics
+                                    </div>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
 
-                        <div class="heading__menu-sub-item">
-                            <h4 class="title">Check this posts</h4>
-                            <div class="body">
-                                <div class="grid wide">
-                                    <div class="row">
-                                        <div class="col tv-3 pc-3">
-                                            <div class="content-list">
-                                                <div class="content-item">
-                                                    <a href="" class="content-img--link">
-                                                        <div class="icon-img"><i class="far fa-image"></i></div>
-                                                        <img src="./assets/img/g0ocjglcehu-555x360.jpg" alt="" class="content-img">
-                                                    </a>
-                                                    <div class="content-tags">
-                                                        <a href="" class="content-tag content-tag--business active">business</a>
-                                                        <a href="" class="content-tag content-tag--world">world</a>
-                                                        <a href="" class="content-tag content-tag--video">video</a>
-                                                        <a href="" class="content-tag content-tag--markets">markets</a>
-                                                    </div>
-                                                    <div class="content-info">
-                                                        <h4 class="title"><a href="" class="no-hover--color">The City of London Wants To Have Its Brexit Cake and Eat It Too</a></h4>
-                                                        <p class="description">
-                                                            December 10, 2019
-                                                            <span class="description-dot"></span> 5 Mins read
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col tv-3 pc-3">
-                                            <div class="content-list">
-                                                <div class="content-item">
-                                                    <a href="" class="content-img--link">
-                                                        <img src="./assets/img/cmpce1fznue-555x360.jpg" alt="" class="content-img">
-                                                    </a>
-                                                    <div class="content-tags">
-                                                        <a href="" class="content-tag content-tag--business">business</a>
-                                                        <a href="" class="content-tag content-tag--world active">world</a>
-                                                        <a href="" class="content-tag content-tag--video">video</a>
-                                                        <a href="" class="content-tag content-tag--markets">markets</a>
-                                                    </div>
-                                                    <div class="content-info">
-                                                        <h4 class="title"><a href="" class="no-hover--color">What You Need to Know About 5G in 2020</a></h4>
-                                                        <p class="description">
-                                                            December 10, 2019
-                                                            <span class="description-dot"></span> 5 Mins read
-                                                        </p>
+                                <div class="heading__menu-sub-item">
+                                    <h4 class="title">Check this posts</h4>
+                                    <div class="body">
+                                        <div class="grid">
+                                            <div class="row">
+                                                <div class="col tv-3 pc-3 tl-6 mb-12">
+                                                    <div class="content-list">
+                                                        <div class="content-item">
+                                                            <a href="" class="content-img--link">
+                                                                <div class="icon-img"><i class="far fa-image"></i></div>
+                                                                <img src="./assets/img/g0ocjglcehu-555x360.jpg" alt="" class="content-img">
+                                                            </a>
+                                                            <div class="content-tags">
+                                                                <a href="" class="content-tag content-tag--business active">business</a>
+                                                                <a href="" class="content-tag content-tag--world">world</a>
+                                                                <a href="" class="content-tag content-tag--video">video</a>
+                                                                <a href="" class="content-tag content-tag--markets">markets</a>
+                                                            </div>
+                                                            <div class="content-info">
+                                                                <h4 class="title"><a href="" class="no-hover--color">The City of London Wants To Have Its Brexit Cake and Eat It Too</a></h4>
+                                                                <p class="description">
+                                                                    December 10, 2019
+                                                                    <span class="description-dot"></span> 5 Mins read
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col tv-3 pc-3">
-                                            <div class="content-list">
-                                                <div class="content-item">
-                                                    <a href="" class="content-img--link">
-                                                        <div class="icon-img"><i class="fas fa-play"></i></div>
-                                                        <img src="./assets/img/inhype2-photos-1-555x360.jpg" alt="" class="content-img">
-                                                    </a>
-                                                    <div class="content-tags">
-                                                        <a href="" class="content-tag content-tag--business">business</a>
-                                                        <a href="" class="content-tag content-tag--world">world</a>
-                                                        <a href="" class="content-tag content-tag--video active">video</a>
-                                                        <a href="" class="content-tag content-tag--markets">markets</a>
-                                                    </div>
-                                                    <div class="content-info">
-                                                        <h4 class="title"><a href="" class="no-hover--color">Middle Age Misery Peaks at Age of 47.2, Economist Says</a></h4>
-                                                        <p class="description">
-                                                            By <span>Inhype</span>
-                                                            <span class="description-dot"></span> December 3, 2019
-                                                            <span class="description-dot"></span> 5 Mins read
-                                                        </p>
+                                                <div class="col tv-3 pc-3 tl-6 mb-12">
+                                                    <div class="content-list">
+                                                        <div class="content-item">
+                                                            <a href="" class="content-img--link">
+                                                                <img src="./assets/img/cmpce1fznue-555x360.jpg" alt="" class="content-img">
+                                                            </a>
+                                                            <div class="content-tags">
+                                                                <a href="" class="content-tag content-tag--business">business</a>
+                                                                <a href="" class="content-tag content-tag--world active">world</a>
+                                                                <a href="" class="content-tag content-tag--video">video</a>
+                                                                <a href="" class="content-tag content-tag--markets">markets</a>
+                                                            </div>
+                                                            <div class="content-info">
+                                                                <h4 class="title"><a href="" class="no-hover--color">What You Need to Know About 5G in 2020</a></h4>
+                                                                <p class="description">
+                                                                    December 10, 2019
+                                                                    <span class="description-dot"></span> 5 Mins read
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col tv-3 pc-3">
-                                            <div class="content-list">
-                                                <div class="content-item">
-                                                    <a href="" class="content-img--link">
-                                                        <div class="icon-img text"><span>8.2</span></div>
-                                                        <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
-                                                    </a>
-                                                    <div class="content-tags">
-                                                        <a href="" class="content-tag content-tag--business active">business</a>
-                                                        <a href="" class="content-tag content-tag--world">world</a>
-                                                        <a href="" class="content-tag content-tag--video">video</a>
-                                                        <a href="" class="content-tag content-tag--markets active">markets</a>
+                                                <div class="col tv-3 pc-3 tl-6 mb-12">
+                                                    <div class="content-list">
+                                                        <div class="content-item">
+                                                            <a href="" class="content-img--link">
+                                                                <div class="icon-img"><i class="fas fa-play"></i></div>
+                                                                <img src="./assets/img/inhype2-photos-1-555x360.jpg" alt="" class="content-img">
+                                                            </a>
+                                                            <div class="content-tags">
+                                                                <a href="" class="content-tag content-tag--business">business</a>
+                                                                <a href="" class="content-tag content-tag--world">world</a>
+                                                                <a href="" class="content-tag content-tag--video active">video</a>
+                                                                <a href="" class="content-tag content-tag--markets">markets</a>
+                                                            </div>
+                                                            <div class="content-info">
+                                                                <h4 class="title"><a href="" class="no-hover--color">Middle Age Misery Peaks at Age of 47.2, Economist Says</a></h4>
+                                                                <p class="description">
+                                                                    By <span>Inhype</span>
+                                                                    <span class="description-dot"></span> December 3, 2019
+                                                                    <span class="description-dot"></span> 5 Mins read
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="content-info">
-                                                        <h4 class="title"><a href="" class="no-hover--color">What to Do if You Overspent During the Holidays</a></h4>
-                                                        <p class="description">
-                                                            December 2, 2019
-                                                            <span class="description-dot"></span> 5 Mins read
-                                                        </p>
+                                                </div>
+                                                <div class="col tv-3 pc-3 tl-6 mb-12">
+                                                    <div class="content-list">
+                                                        <div class="content-item">
+                                                            <a href="" class="content-img--link">
+                                                                <div class="icon-img text"><span>8.2</span></div>
+                                                                <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
+                                                            </a>
+                                                            <div class="content-tags">
+                                                                <a href="" class="content-tag content-tag--business active">business</a>
+                                                                <a href="" class="content-tag content-tag--world">world</a>
+                                                                <a href="" class="content-tag content-tag--video">video</a>
+                                                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                                                            </div>
+                                                            <div class="content-info">
+                                                                <h4 class="title"><a href="" class="no-hover--color">What to Do if You Overspent During the Holidays</a></h4>
+                                                                <p class="description">
+                                                                    December 2, 2019
+                                                                    <span class="description-dot"></span> 5 Mins read
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
-                            World news
-                            <span>Hot</span>
-                        </a>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
+                            </li>
+                            <li class="heading__menu-item">
+                                <a href="">
+                                    <div>
+                                        World news
+                                        <span>Hot</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="heading__menu-item">
+                                <a href="">
                             Business
                         </a>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
+                            </li>
+                            <li class="heading__menu-item">
+                                <a href="">
                             About
                         </a>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
+                            </li>
+                            <li class="heading__menu-item">
+                                <a href="">
                             Contact
                         </a>
-                    </li>
-                    <li class="heading__menu-item">
-                        <a href="">
+                            </li>
+                            <li class="heading__menu-item">
+                                <a href="">
                             Subscribe
                         </a>
-                    </li>
+                            </li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -618,7 +648,7 @@
                                     <a href="" class="content-tag content-tag--video active">video</a>
                                     <a href="" class="content-tag content-tag--markets">markets</a>
                                 </div>
-                                <div class="content-info">
+                                <div class="content-info mid">
                                     <h4 class="title"><a href="">Middle Age Misery Peaks at Age of 47.2, Economist Says</a></h4>
                                     <p class="description">
                                         By <span>Inhype</span>
@@ -679,7 +709,7 @@
 
         <div class="slider-block">
             <div class="grid wide">
-                <div class="slider mt-60">
+                <div class="slider mt-primary">
                     <div class="slider-hidden">
                         <ul class="slider-list">
                             <div>
@@ -772,11 +802,11 @@
             </div>
         </div>
 
-        <div class="weekends mt-60">
+        <div class="weekends mt-primary">
             <div class="grid wide">
                 <h4 class="content__title">Weekends</h4>
                 <div class="row">
-                    <div class="col tv-4 pc-4 tl-12 mb-12">
+                    <div class="col tv-4 pc-4 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <div class="icon-img"><i class="far fa-image"></i></div>
@@ -805,8 +835,8 @@
                         <div class="grid">
                             <div class="row">
                                 <div class="col tv-6 pc-6 tl-12 mb-12">
-                                    <div class="weekends__item">
-                                        <div class="content-tags">
+                                    <div class="weekends__item hidden-element">
+                                        <div class="content-tags" margin-top="0">
                                             <a href="" class="content-tag content-tag--business">business</a>
                                             <a href="" class="content-tag content-tag--world active">world</a>
                                             <a href="" class="content-tag content-tag--video">video</a>
@@ -823,8 +853,8 @@
                                     </div>
                                 </div>
                                 <div class="col tv-6 pc-6 tl-12 mb-12">
-                                    <div class="weekends__item">
-                                        <div class="content-tags">
+                                    <div class="weekends__item hidden-element">
+                                        <div class="content-tags" margin-top="0">
                                             <a href="" class="content-tag content-tag--business">business</a>
                                             <a href="" class="content-tag content-tag--world">world</a>
                                             <a href="" class="content-tag content-tag--video active">video</a>
@@ -840,8 +870,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col tv-6 pc-6 tl-12 mb-12">
                                     <div class="weekends__item">
                                         <div class="content-tags">
@@ -878,8 +906,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col tv-6 pc-6 tl-12 mb-12">
                                     <div class="weekends__item">
                                         <div class="content-tags">
@@ -916,8 +942,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col tv-6 pc-6 tl-12 mb-12">
                                     <div class="weekends__item">
                                         <div class="content-tags">
@@ -964,11 +988,11 @@
             </div>
         </div>
 
-        <div class="story mt-60">
+        <div class="story mt-primary">
             <div class="grid wide">
                 <h4 class="content__title">Stories for you</h4>
                 <div class="row">
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <div class="icon-img text"><span>8.2</span></div>
@@ -989,7 +1013,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <img src="./assets/img/story2.jpg" alt="" class="content-img">
@@ -1009,7 +1033,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <div class="icon-img text N8-7"><span>8.7</span></div>
@@ -1030,7 +1054,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <img src="./assets/img/g0ocjglcehu-555x360.jpg" alt="" class="content-img">
@@ -1054,11 +1078,11 @@
             </div>
         </div>
 
-        <div class="inhype-businessweek mt-60">
+        <div class="inhype-businessweek mt-primary">
             <div class="grid wide">
                 <h4 class="content__title">Inhype Businessweek</h4>
                 <div class="row">
-                    <div class="col tv-4 pc-4 tl-12 mb-12">
+                    <div class="col tv-4 pc-4 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <img src="./assets/img/InhypeBusinessweek1.jpg" alt="" class="content-img">
@@ -1078,7 +1102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-4 pc-4 tl-12 mb-12">
+                    <div class="col tv-4 pc-4 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <img src="./assets/img/InhypeBusinessweek2.jpg" alt="" class="content-img">
@@ -1098,7 +1122,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-4 pc-4 tl-12 mb-12">
+                    <div class="col tv-4 pc-4 tl-6 mb-12">
                         <div class="content-item">
                             <a href="" class="content-img--link">
                                 <img src="./assets/img/InhypeBusinessweek3.jpg" alt="" class="content-img">
@@ -1125,12 +1149,12 @@
             </div>
         </div>
 
-        <div class="politics mt-60">
+        <div class="politics mt-primary">
             <div class="grid wide">
                 <h4 class="content__title">Politics</h4>
                 <div class="row">
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
-                        <div class="weekends__item">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
+                        <div class="weekends__item mt-40--tl">
                             <div class="content-tags">
                                 <a href="" class="content-tag content-tag--business">business</a>
                                 <a href="" class="content-tag content-tag--world">world</a>
@@ -1146,7 +1170,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="weekends__item">
                             <div class="content-tags">
                                 <a href="" class="content-tag content-tag--business active">business</a>
@@ -1163,7 +1187,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="weekends__item">
                             <div class="content-tags">
                                 <a href="" class="content-tag content-tag--business active">business</a>
@@ -1180,7 +1204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col tv-3 pc-3 tl-12 mb-12">
+                    <div class="col tv-3 pc-3 tl-6 mb-12">
                         <div class="weekends__item">
                             <div class="content-tags">
                                 <a href="" class="content-tag content-tag--business">business</a>
@@ -1201,112 +1225,212 @@
             </div>
         </div>
 
-        <div class="european-news mt-60">
-            <div class="grid wide">
+        <div class="european-news mt-primary">
+            <div class="grid wide" style="overflow: hidden;">
                 <h4 class="content__title">European News</h4>
-                <div class="european-news--hidden">
-                    <div class="european-news__list">
-                        <div class="row">
-                            <div class="col tv-p-20 pc-p-20 tl-p-20 mb-12">
-                                <div class="content-item">
-                                    <a href="" class="content-img--link">
-                                        <div class="icon-img text N8-7"><span>8.7</span></div>
-                                        <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
-                                    </a>
-                                    <div class="content-tags">
-                                        <a href="" class="content-tag content-tag--business active">business</a>
-                                        <a href="" class="content-tag content-tag--world">world</a>
-                                        <a href="" class="content-tag content-tag--video">video</a>
-                                        <a href="" class="content-tag content-tag--markets active">markets</a>
-                                    </div>
-                                    <div class="content-info">
-                                        <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
-                                        <p class="description">
-                                            December 2, 2019
-                                            <span class="description-dot"></span> 5 Mins read
-                                        </p>
-                                    </div>
+                <div class="row">
+                    <div class="slick-slider__col5">
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <div class="icon-img text N8-7"><span>8.7</span></div>
+                                    <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business active">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets active">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col tv-p-20 pc-p-20 tl-p-20 mb-12">
-                                <div class="content-item">
-                                    <a href="" class="content-img--link">
-                                        <img src="./assets/img/european-news2.jpg" alt="" class="content-img">
-                                    </a>
-                                    <div class="content-tags">
-                                        <a href="" class="content-tag content-tag--business active">business</a>
-                                        <a href="" class="content-tag content-tag--world">world</a>
-                                        <a href="" class="content-tag content-tag--video">video</a>
-                                        <a href="" class="content-tag content-tag--markets">markets</a>
-                                    </div>
-                                    <div class="content-info">
-                                        <h4 class="title"><a href="">CNN Agrees to Pay $76 Million to Settle Allegations It Violated Federal Labor Law</a></h4>
-                                        <p class="description">
-                                            December 2, 2019
-                                            <span class="description-dot"></span> 5 Mins read
-                                        </p>
-                                    </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <img src="./assets/img/european-news2.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business active">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">CNN Agrees to Pay $76 Million to Settle Allegations It Violated Federal Labor Law</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col tv-p-20 pc-p-20 tl-p-20 mb-12">
-                                <div class="content-item">
-                                    <a href="" class="content-img--link">
-                                        <img src="./assets/img/european-news1.jpg" alt="" class="content-img">
-                                    </a>
-                                    <div class="content-tags">
-                                        <a href="" class="content-tag content-tag--business">business</a>
-                                        <a href="" class="content-tag content-tag--world active">world</a>
-                                        <a href="" class="content-tag content-tag--video">video</a>
-                                        <a href="" class="content-tag content-tag--markets">markets</a>
-                                    </div>
-                                    <div class="content-info">
-                                        <h4 class="title"><a href="">How Trump Pushed the U.S. and Iran to the Brink of War</a></h4>
-                                        <p class="description">
-                                            December 2, 2019
-                                            <span class="description-dot"></span> 5 Mins read
-                                        </p>
-                                    </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <img src="./assets/img/european-news1.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">How Trump Pushed the U.S. and Iran to the Brink of War</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col tv-p-20 pc-p-20 tl-p-20 mb-12">
-                                <div class="content-item">
-                                    <a href="" class="content-img--link">
-                                        <img src="./assets/img/story2.jpg" alt="" class="content-img">
-                                    </a>
-                                    <div class="content-tags">
-                                        <a href="" class="content-tag content-tag--business">business</a>
-                                        <a href="" class="content-tag content-tag--world active">world</a>
-                                        <a href="" class="content-tag content-tag--video">video</a>
-                                        <a href="" class="content-tag content-tag--markets">markets</a>
-                                    </div>
-                                    <div class="content-info">
-                                        <h4 class="title"><a href="">The End of the Bonus Culture Is Coming to Wall Street</a></h4>
-                                        <p class="description">
-                                            December 2, 2019
-                                            <span class="description-dot"></span> 5 Mins read
-                                        </p>
-                                    </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <img src="./assets/img/story2.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">The End of the Bonus Culture Is Coming to Wall Street</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col tv-p-20 pc-p-20 tl-p-20 mb-12">
-                                <div class="content-item">
-                                    <a href="" class="content-img--link">
-                                        <div class="icon-img text N8-7"><span>8.7</span></div>
-                                        <img src="./assets/img/InhypeBusinessweek2.jpg" alt="" class="content-img">
-                                    </a>
-                                    <div class="content-tags">
-                                        <a href="" class="content-tag content-tag--business">business</a>
-                                        <a href="" class="content-tag content-tag--world">world</a>
-                                        <a href="" class="content-tag content-tag--video">video</a>
-                                        <a href="" class="content-tag content-tag--markets active">markets</a>
-                                    </div>
-                                    <div class="content-info">
-                                        <h4 class="title"><a href="">Two Big Drug Flops Show How Health-Care Economics Have Changed</a></h4>
-                                        <p class="description">
-                                            December 2, 2019
-                                            <span class="description-dot"></span> 5 Mins read
-                                        </p>
-                                    </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <div class="icon-img text N8-7"><span>8.7</span></div>
+                                    <img src="./assets/img/InhypeBusinessweek2.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets active">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">Two Big Drug Flops Show How Health-Care Economics Have Changed</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <div class="icon-img text N8-7"><span>8.7</span></div>
+                                    <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business active">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets active">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <img src="./assets/img/european-news2.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business active">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">CNN Agrees to Pay $76 Million to Settle Allegations It Violated Federal Labor Law</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <img src="./assets/img/european-news1.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">How Trump Pushed the U.S. and Iran to the Brink of War</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <img src="./assets/img/story2.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">The End of the Bonus Culture Is Coming to Wall Street</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-item">
+                                <a href="" class="content-img--link">
+                                    <div class="icon-img text N8-7"><span>8.7</span></div>
+                                    <img src="./assets/img/InhypeBusinessweek2.jpg" alt="" class="content-img">
+                                </a>
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets active">markets</a>
+                                </div>
+                                <div class="content-info">
+                                    <h4 class="title"><a href="">Two Big Drug Flops Show How Health-Care Economics Have Changed</a></h4>
+                                    <p class="description">
+                                        December 2, 2019
+                                        <span class="description-dot"></span> 5 Mins read
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1315,7 +1439,7 @@
             </div>
         </div>
 
-        <div class="selected mt-60">
+        <div class="selected mt-primary">
             <div class="grid wide">
                 <h4 class="content__title">
                     Selected
@@ -1325,7 +1449,7 @@
                 </h4>
                 <div class="row">
                     <div class="col tv-7 pc-7 tl-12 mb-12">
-                        <div class="selected__item">
+                        <div class="selected__item mt-40">
                             <a href="" class="content-img--link">
                                 <div class="icon-img text"><span>8.2</span></div>
                             </a>
@@ -1402,19 +1526,1220 @@
                     </div>
                     <div class="col tv-5 pc-5 tl-12 mb-12">
                         <div class="selected__item-img">
-                            <img src="./assets/img/story4.jpg" alt="">
+                            <div class="selected__item-img-info">
+                                <div class="tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="title">China State Firm’s $6 Billion Loss Is Among Nation’s Worst Ever</h4>
+                                <p class="description">
+                                    Sponsored
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
                         </div>
                         <div class="selected__item-img">
-                            <img src="./assets/img/european-news1.jpg" alt="">
+                            <div class="selected__item-img-info">
+                                <div class="tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="title">How Trump Pushed the U.S. and Iran to the Brink of War</h4>
+                                <p class="description">
+                                    Sponsored
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="quick-take mt-primary">
+            <div class="box-100px"></div>
+            <div class="grid wide">
+                <div class="quick-take__list">
+                    <div>
+                        <div class="quick-take__item">
+                            <div class="row">
+                                <div class="col tv-6 pc-6 tl-12 mb-12">
+                                    <header>
+                                        QuickTake
+                                        <span>Our best video stuff</span>
+                                    </header>
+                                    <div class="content-tags mt-primary">
+                                        <a href="" class="content-tag background-color-white content-tag--business">business</a>
+                                        <a href="" class="content-tag background-color-white content-tag--world">world</a>
+                                        <a href="" class="content-tag background-color-white content-tag--video active">video</a>
+                                        <a href="" class="content-tag background-color-white content-tag--markets">markets</a>
+                                    </div>
+                                    <div class="content-info">
+                                        <h4 class="title"><a href="" class="color-white">Middle Age Misery Peaks at Age of 47.2, Economist Says</a></h4>
+                                        <p class="description">
+                                            By <a href="" class="color-white">Inhype</a>
+                                            <span class="description-dot"></span> December 3, 2019
+                                            <span class="description-dot"></span> 5 Mins read
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col tv-6 pc-6 tl-12 mb-12">
+                                    <div class="quick-take-img__item-img content-img--link">
+                                        <img src="./assets/img/inhype2-photos-1-555x360.jpg" alt="">
+                                        <div class="icon-img"><i class="far fa-image"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="quick-take__item">
+                            <div class="row">
+                                <div class="col tv-6 pc-6 tl-12 mb-12">
+                                    <header>
+                                        QuickTake
+                                        <span>Our best video stuff</span>
+                                    </header>
+                                    <div class="content-tags mt-primary">
+                                        <a href="" class="content-tag background-color-white content-tag--business">business</a>
+                                        <a href="" class="content-tag background-color-white content-tag--world">world</a>
+                                        <a href="" class="content-tag background-color-white content-tag--video active">video</a>
+                                        <a href="" class="content-tag background-color-white content-tag--markets">markets</a>
+                                    </div>
+                                    <div class="content-info">
+                                        <h4 class="title"><a href="" class="color-white">The City of London Wants To Have Its Brexit Cake and Eat It Too</a></h4>
+                                        <p class="description">
+                                            By <a href="" class="color-white">Inhype</a>
+                                            <span class="description-dot"></span> December 3, 2019
+                                            <span class="description-dot"></span> 5 Mins read
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col tv-6 pc-6 tl-12 mb-12">
+                                    <div class="quick-take-img__item-img content-img--link">
+                                        <img src="./assets/img/g0ocjglcehu-555x360.jpg" alt="">
+                                        <div class="icon-img"><i class="far fa-image"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="quick-take__item">
+                            <div class="row">
+                                <div class="col tv-6 pc-6 tl-12 mb-12">
+                                    <header>
+                                        QuickTake
+                                        <span>Our best video stuff</span>
+                                    </header>
+                                    <div class="content-tags mt-primary">
+                                        <a href="" class="content-tag background-color-white content-tag--business">business</a>
+                                        <a href="" class="content-tag background-color-white content-tag--world">world</a>
+                                        <a href="" class="content-tag background-color-white content-tag--video active">video</a>
+                                        <a href="" class="content-tag background-color-white content-tag--markets">markets</a>
+                                    </div>
+                                    <div class="content-info">
+                                        <h4 class="title"><a href="" class="color-white">What You Need to Know About 5G in 2020</a></h4>
+                                        <p class="description">
+                                            By <a href="" class="color-white">Inhype</a>
+                                            <span class="description-dot"></span> December 3, 2019
+                                            <span class="description-dot"></span> 5 Mins read
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col tv-6 pc-6 tl-12 mb-12">
+                                    <div class="quick-take-img__item-img content-img--link">
+                                        <img src="./assets/img/cmpce1fznue-555x360.jpg" alt="">
+                                        <div class="icon-img"><i class="far fa-image"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-100px"></div>
+        </div>
     </div>
 
-    <div class="box"></div>
+    <div class="world-wide mt-primary">
+        <div class="grid wide">
+            <h4 class="content__title">
+                Worldwide News
+                <span class="content__title-description">
+                        WHERE ARE WE GOING
+                    </span>
+            </h4>
+            <div class="row">
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <div class="world-wide__item selected__item-img">
+                        <div class="selected__item-img-info">
+                            <div class="tags">
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                            </div>
+                            <h4 class="title">What You Need to Know About 5G in 2020</h4>
+                            <p class="description">
+                                Sponsored
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <div class="world-wide__item selected__item-img">
+                        <div class="selected__item-img-info">
+                            <div class="tags">
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                            </div>
+                            <h4 class="title">The End of the Bonus Culture Is Coming to Wall Street</h4>
+                            <p class="description">
+                                Sponsored
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <div class="world-wide__item selected__item-img">
+                        <div class="selected__item-img-info">
+                            <div class="tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <h4 class="title">China State Firm’s $6 Billion Loss Is Among Nation’s Worst Ever</h4>
+                            <p class="description">
+                                Sponsored
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <div class="world-wide__item selected__item-img">
+                        <div class="selected__item-img-info">
+                            <div class="tags">
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                            </div>
+                            <h4 class="title">How Trump Pushed the U.S. and Iran to the Brink of War</h4>
+                            <p class="description">
+                                Sponsored
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <div class="world-wide__item selected__item-img">
+                        <div class="selected__item-img-info">
+                            <div class="tags">
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                            </div>
+                            <h4 class="title">Brussels Edition: Seeking a Trade Reset</h4>
+                            <p class="description">
+                                Sponsored
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <div class="world-wide__item selected__item-img">
+                        <div class="selected__item-img-info">
+                            <div class="tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <h4 class="title">Simple Steps for Upgrading Your Social Media Strategy</h4>
+                            <p class="description">
+                                Sponsored
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-line" margin-top="20"></div>
+        </div>
+    </div>
+
+    <div class="connect mt-primary">
+        <div class="grid wide">
+            <div class="form-connect">
+                <h4 class="title">Power your team with InHype</h4>
+                <form action="">
+                    <input type="email" placeholder="Please enter your e-mail">
+                    <input type="submit" value="Subsrcribe">
+                </form>
+                <p class="description">Add some text to explain benefits of subscripton on your services.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="markets mt-primary">
+        <div class="grid wide">
+            <h4 class="content__title">Markets</h4>
+            <div class="row">
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags" margin-top="0">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world">world</a>
+                        <a href="" class="content-tag content-tag--video">video</a>
+                        <a href="" class="content-tag content-tag--markets active">markets</a>
+                        <a href="" class="content-tag content-tag--politics active">politics</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
+                        <p class="description">
+                            December 2, 2019
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags" margin-top="0">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world">world</a>
+                        <a href="" class="content-tag content-tag--video active">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">Netflix Price Cuts Are Heating Up India’s Streaming War</a></h4>
+                        <p class="description">
+                            November 6, 2019
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags" margin-top="0">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world">world</a>
+                        <a href="" class="content-tag content-tag--video active">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">Amazon’s Bezos to Face Unprecedented Protests During India Trip</a></h4>
+                        <p class="description">
+                            November 21, 2019
+                            <span class="description-dot"></span> 4 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags" margin-top="0">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world active">world</a>
+                        <a href="" class="content-tag content-tag--video">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">The End of the Bonus Culture Is Coming to Wall Street</a></h4>
+                        <p class="description">
+                            November 26, 2019
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags">
+                        <a href="" class="content-tag content-tag--business active">business</a>
+                        <a href="" class="content-tag content-tag--world">world</a>
+                        <a href="" class="content-tag content-tag--video">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">The Biggest Moments in 2019, Explained Through Graphics</a></h4>
+                        <p class="description">
+                            November 21, 2019
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world active">world</a>
+                        <a href="" class="content-tag content-tag--video">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">China State Firm’s $6 Billion Loss Is Among Nation’s Worst Ever</a></h4>
+                        <p class="description">
+                            Sponsored
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world active">world</a>
+                        <a href="" class="content-tag content-tag--video">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                        <a href="" class="content-tag content-tag--politics">politics</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">How Trump Pushed the U.S. and Iran to the Brink of War</a></h4>
+                        <p class="description">
+                            Sponsored
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+                <div class="col tv-3 pc-3 tl-6 mb-12">
+                    <div class="content-tags">
+                        <a href="" class="content-tag content-tag--business">business</a>
+                        <a href="" class="content-tag content-tag--world">world</a>
+                        <a href="" class="content-tag content-tag--video active">video</a>
+                        <a href="" class="content-tag content-tag--markets">markets</a>
+                        <a href="" class="content-tag content-tag--politics">politics</a>
+                    </div>
+                    <div class="content-info">
+                        <h4 class="title"><a href="">Danske Offers 2,000 Bankers Option to Quit Amid Mounting Costs</a></h4>
+                        <p class="description">
+                            November 21, 2019
+                            <span class="description-dot"></span> 5 Mins read
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-line" margin-top="68"></div>
+        </div>
+    </div>
+
+    <div class="posts mt-primary">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col tv-8 pc-8 tl-12 mb-12">
+                    <div class="posts-left">
+                        <div class="content-item" margin-bottom="50">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img"><i class="far fa-image"></i></div>
+                                <img src="./assets/img/g0ocjglcehu-555x360.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">The City of London Wants To Have Its Brexit Cake and Eat It Too</a></h4>
+                                <p class="description">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> December 10, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                            <p class="weekends__description">Graduating from a top accelerator or incubator can be as career-defining for a startup founder as an elite university diploma. The intensive programmes, which…</p>
+                            <a href="" class="more-btn" margin-top="23">Read more</a>
+                        </div>
+
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link"></a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">What You Need to Know About 5G in 2020</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> December 10, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    Even so, many believe there are less problematic and more effective ways to approach outdoors overcrowding than to avoid geotagging – it’s…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img"><i class="fas fa-play"></i></div>
+                            </a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video active">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">Middle Age Misery Peaks at Age of 47.2, Economist Says</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> December 3, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    We are looking beyond ideation stage to, at the very least, beta, and for companies that are corporate-ready. Retailers want to see…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img text"><span>8.2</span></div>
+                            </a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business active">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets active">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">What to Do if You Overspent During the Holidays</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    From there, we generally start working on visual concepts that can make that vision more tangible. Our stakeholders are often editors with…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="posts-img " style="padding: 0 0 30px 15px;">
+                            <a href="">
+                                <img src="./assets/img/promo-4-inhype2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img"><i class="fas fa-play"></i></div>
+                            </a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business active">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video active">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">What to Expect From the 2020 Oscar Nominations</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> December 1, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    That’s because in spite of its iffy earnings reports over the last five years, Synergy Research reported that IBM had 7 percent…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link"></a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">The End of the Bonus Culture Is Coming to Wall Street</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> November 26, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    The most important skill for a product leader is active listening. Be a good listener and you will naturally build trust across individuals,…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img text N8-7"><span>8.7</span></div>
+                            </a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets active">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">Review: ‘The New Pope’ on HBO: Faith, Hope and Sponge Baths</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> November 26, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    What matters is understanding the hows and whys of trends’ emergence and adoption. Because at the end of the day, trends have…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+                        <div class="posts__item " margin-bottom="50">
+                            <a href="" class="content-img--link">
+                            </a>
+                            <div class="selected__item-info">
+                                <div class="content-tags">
+                                    <a href="" class="content-tag content-tag--business">business</a>
+                                    <a href="" class="content-tag content-tag--world active">world</a>
+                                    <a href="" class="content-tag content-tag--video">video</a>
+                                    <a href="" class="content-tag content-tag--markets">markets</a>
+                                </div>
+                                <h4 class="selected__item-title">
+                                    <a href="">China State Firm’s $6 Billion Loss Is Among Nation’s Worst Ever</a>
+                                </h4>
+                                <div class="selected__item-time">
+                                    By <a href="">Inhype</a>
+                                    <span class="description-dot"></span> Sponsored
+                                    <span class="description-dot"></span> 5 Mins read
+                                </div>
+                                <p class="selected__item-description">
+                                    Strategies for email campaigns vary, but the email newsletter lies at the heart of each. It is a sort of a decider:…
+                                </p>
+                                <a href="" class="more-btn" margin-top="24">Read more</a>
+                            </div>
+                        </div>
+                        <div style="text-align: center;" class="">
+                            <a href="" class="more-btn">Load more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-4 pc-4 tl-12 mb-12">
+                    <div class="posts-right mt-primary">
+                        <h4 class="posts-right__title">Latest posts</h4>
+                        <div class="posts-right__item">
+                            <div class="content-tags" margin-top="0">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                                <a href="" class="content-tag content-tag--politics">politics</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">The City of London Wants To Have Its Brexit Cake and Eat It Too</a></h4>
+                                <p class="description">
+                                    December 10, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="posts-right__item">
+                            <div class="content-tags" margin-top="0">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                                <a href="" class="content-tag content-tag--politics">politics</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">What You Need to Know About 5G in 2020</a></h4>
+                                <p class="description">
+                                    December 10, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="posts-right__item">
+                            <div class="content-tags" margin-top="0">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video active">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                                <a href="" class="content-tag content-tag--politics">politics</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">Middle Age Misery Peaks at Age of 47.2, Economist Says</a></h4>
+                                <p class="description">
+                                    December 3, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="posts-right__item">
+                            <div class="content-tags" margin-top="0">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                                <a href="" class="content-tag content-tag--politics active">politics</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="posts-right__title" margin-bottom="30">Popular</h4>
+                        <div class="content-item content-item--right">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img"><i class="fas fa-play"></i></div>
+                                <img src="./assets/img/inhype2-photos-1-555x360.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video active">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title">
+                                    <a href="">
+                                        Middle Age Misery Peaks at Age of 47.2, Economist Says
+                                    </a>
+                                </h4>
+                                <p class="description">
+                                    December 3, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-item content-item--right">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img"><i class="far fa-image"></i></div>
+                                <img src="./assets/img/g0ocjglcehu-555x360.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title">
+                                    <a href="">
+                                        The City of London Wants To Have Its Brexit Cake and Eat It Too
+                                    </a>
+                                </h4>
+                                <p class="description">
+                                    December 10, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="posts-right__title" margin-bottom="30" margin-top="15">Categories</h4>
+                        <div class="categories__item categories__item--business">
+                            <a href="" class="content-tag content-tag--business active">business</a>
+                            <h6>5 Posts</h6>
+                        </div>
+                        <div class="categories__item categories__item--markets">
+                            <a href="" class="content-tag content-tag--markets active">markets</a>
+                            <h6>5 Posts</h6>
+                        </div>
+                        <div class="categories__item categories__item--politics">
+                            <a href="" class="content-tag content-tag--politics active">politics</a>
+                            <h6>5 Posts</h6>
+                        </div>
+                        <div class="categories__item categories__item--video">
+                            <a href="" class="content-tag content-tag--video active">video</a>
+                            <h6>5 Posts</h6>
+                        </div>
+                        <div class="categories__item categories__item--world">
+                            <a href="" class="content-tag content-tag--world active">world</a>
+                            <h6>5 Posts</h6>
+                        </div>
+                        <h4 class="posts-right__title" margin-bottom="30" margin-top="8">Subscribe and Follow</h4>
+                        <a href="" class="posts__social posts__social--facebook">
+                            <div class="posts__social-infor">
+                                <div class="posts__social-title">Facebook</div>
+                                <div class="posts__social-des">53K Likes</div>
+                            </div>
+                            <div class="posts__social-icon"><i class="fab fa-twitter"></i></div>
+                        </a>
+                        <a href="" class="posts__social posts__social--twitter">
+                            <div class="posts__social-infor">
+                                <div class="posts__social-title">Twitter</div>
+                                <div class="posts__social-des">654K Followers</div>
+                            </div>
+                            <div class="posts__social-icon"><i class="fab fa-facebook-f"></i></div>
+                        </a>
+                        <a href="" class="posts__social posts__social--instagram">
+                            <div class="posts__social-infor">
+                                <div class="posts__social-title">Instagram</div>
+                                <div class="posts__social-des">1M Followers</div>
+                            </div>
+                            <div class="posts__social-icon"><i class="fab fa-instagram"></i></div>
+                        </a>
+                        <a href="" class="posts__social posts__social--youtube">
+                            <div class="posts__social-infor">
+                                <div class="posts__social-title">Youtube</div>
+                                <div class="posts__social-des">2M Followers</div>
+                            </div>
+                            <div class="posts__social-icon"><i class="fab fa-youtube"></i></div>
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/promo-2-inhype3.png" margin-top="40" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trend mt-primary">
+        <div class="grid wide" style="overflow: hidden;">
+            <h4 class="content__title">
+                What's trending today
+                <span class="content__title-description">
+                        PEOPLE LOVE IT
+                    </span>
+            </h4>
+            <div class="row">
+                <div class="slick-slider__col5">
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img text N8-7"><span>8.7</span></div>
+                                <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                                <a href="" class="content-tag content-tag--politics">politics</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <img src="./assets/img/european-news2.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">CNN Agrees to Pay $76 Million to Settle Allegations It Violated Federal Labor Law</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <img src="./assets/img/european-news1.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">How Trump Pushed the U.S. and Iran to the Brink of War</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <img src="./assets/img/story2.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">The End of the Bonus Culture Is Coming to Wall Street</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img text N8-7"><span>8.7</span></div>
+                                <img src="./assets/img/InhypeBusinessweek2.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">Two Big Drug Flops Show How Health-Care Economics Have Changed</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img text N8-7"><span>8.7</span></div>
+                                <img src="./assets/img/othxsvthtrc-555x360.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">What to Do if You Overspent During the Holidays</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <img src="./assets/img/european-news2.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">CNN Agrees to Pay $76 Million to Settle Allegations It Violated Federal Labor Law</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <img src="./assets/img/european-news1.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">How Trump Pushed the U.S. and Iran to the Brink of War</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <img src="./assets/img/story2.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">The End of the Bonus Culture Is Coming to Wall Street</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content-item">
+                            <a href="" class="content-img--link">
+                                <div class="icon-img text N8-7"><span>8.7</span></div>
+                                <img src="./assets/img/InhypeBusinessweek2.jpg" alt="" class="content-img">
+                            </a>
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                            </div>
+                            <div class="content-info">
+                                <h4 class="title"><a href="">Two Big Drug Flops Show How Health-Care Economics Have Changed</a></h4>
+                                <p class="description">
+                                    December 2, 2019
+                                    <span class="description-dot"></span> 5 Mins read
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-income mt-primary">
+        <div class="grid wide">
+            <h4 class="content__title">Fixed Income</h4>
+            <div class="row" margin-top="40">
+                <div class="col tv-6 pc-6 tl-6">
+                    <div class="fixed-income__item">
+                        <a href="" class="content-img--link"></a>
+                        <div class="selected__item-info">
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business active">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <h4 class="selected__item-title">
+                                <a href="">The City of London Wants To Have Its Brexit Cake and Eat It Too</a>
+                            </h4>
+                            <div class="selected__item-time">
+                                By <a href="">Inhype</a>
+                                <span class="description-dot"></span> December 2, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-6 pc-6 tl-6">
+                    <div class="fixed-income__item">
+                        <a href="" class="content-img--link"></a>
+                        <div class="selected__item-info">
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video active">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <h4 class="selected__item-title">
+                                <a href="">Middle Age Misery Peaks at Age of 47.2, Economist Says</a>
+                            </h4>
+                            <div class="selected__item-time">
+                                By <a href="">Inhype</a>
+                                <span class="description-dot"></span> December 2, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-6 pc-6 tl-6">
+                    <div class="fixed-income__item">
+                        <a href="" class="content-img--link"></a>
+                        <div class="selected__item-info">
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <h4 class="selected__item-title">
+                                <a href="">What You Need to Know About 5G in 2020</a>
+                            </h4>
+                            <div class="selected__item-time">
+                                By <a href="">Inhype</a>
+                                <span class="description-dot"></span> December 2, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-6 pc-6 tl-6">
+                    <div class="fixed-income__item">
+                        <a href="" class="content-img--link"></a>
+                        <div class="selected__item-info">
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                                <a href="" class="content-tag content-tag--politics active">politics</a>
+                            </div>
+                            <h4 class="selected__item-title">
+                                <a href="">What to Do if You Overspent During the Holidays</a>
+                            </h4>
+                            <div class="selected__item-time">
+                                By <a href="">Inhype</a>
+                                <span class="description-dot"></span> December 2, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-6 pc-6 tl-6">
+                    <div class="fixed-income__item">
+                        <a href="" class="content-img--link"></a>
+                        <div class="selected__item-info">
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets active">markets</a>
+                            </div>
+                            <h4 class="selected__item-title">
+                                <a href="">Review: ‘The New Pope’ on HBO: Faith, Hope and Sponge Baths</a>
+                            </h4>
+                            <div class="selected__item-time">
+                                By <a href="">Inhype</a>
+                                <span class="description-dot"></span> December 2, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-6 pc-6 tl-6">
+                    <div class="fixed-income__item">
+                        <a href="" class="content-img--link"></a>
+                        <div class="selected__item-info">
+                            <div class="content-tags">
+                                <a href="" class="content-tag content-tag--business">business</a>
+                                <a href="" class="content-tag content-tag--world active">world</a>
+                                <a href="" class="content-tag content-tag--video">video</a>
+                                <a href="" class="content-tag content-tag--markets">markets</a>
+                            </div>
+                            <h4 class="selected__item-title">
+                                <a href="">The End of the Bonus Culture Is Coming to Wall Street</a>
+                            </h4>
+                            <div class="selected__item-time">
+                                By <a href="">Inhype</a>
+                                <span class="description-dot"></span> December 2, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-line" margin-top="40"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <h5 class="title">About</h5>
+                    <p>InHype effective News and Wordpress Blog and Magazine Theme - bestseller theme is perfect for blogging and excellent for a news, newspaper, magazine, publishing or review site.</p>
+                    <p>Los Angles, California, USA
+                        <br> (424) 123-4567
+                        <br> support@magnium.com
+                    </p>
+                    <a href="" class="more-btn" margin-top="25">About</a>
+                </div>
+                <div class="col tv-2 pc-2 tl-6 mb-12">
+                    <h5 class="title">Latest</h5>
+                    <div class="lastest-item">
+                        <div class="content-tags" margin-top="0">
+                            <a href="" class="content-tag content-tag--business active">business</a>
+                            <a href="" class="content-tag content-tag--world">world</a>
+                            <a href="" class="content-tag content-tag--video">video</a>
+                            <a href="" class="content-tag content-tag--markets">markets</a>
+                        </div>
+                        <div class="content-info">
+                            <h4 class="title"><a href="">The City of London Wants To Have Its Brexit Cake and Eat It Too</a></h4>
+                            <p class="description">
+                                December 10, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lastest-item">
+                        <div class="content-tags" margin-top="38">
+                            <a href="" class="content-tag content-tag--business">business</a>
+                            <a href="" class="content-tag content-tag--world active">world</a>
+                            <a href="" class="content-tag content-tag--video">video</a>
+                            <a href="" class="content-tag content-tag--markets">markets</a>
+                        </div>
+                        <div class="content-info">
+                            <h4 class="title"><a href="">What You Need to Know About 5G in 2020</a></h4>
+                            <p class="description">
+                                December 10, 2019
+                                <span class="description-dot"></span> 5 Mins read
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col tv-2 pc-2 tl-6 mb-12">
+                    <h5 class="title">Navigation</h5>
+                    <h6>World</h6>
+                    <h6>Business</h6>
+                    <h6>Politics</h6>
+                    <h6>Video</h6>
+                    <h6>Markets</h6>
+                </div>
+                <div class="col tv-4 pc-4 tl-6 mb-12">
+                    <h5 class="title">Subscribe</h5>
+                    <div class="footer-form">
+                        <form action="">
+                            <label for="">Get a bi-weekly digest newsletter</label>
+                            <input type="email" placeholder="Please enter your e-mail">
+                            <button class="more-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-line" margin-top="88"></div>
+            <div class="footer-connect">
+                <p class="footer-connect__text">Powered by <a href="">InHype</a> - News and Magazine Wordpress Blog Theme</p>
+                <div class="footer-connect__social">
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
 
     <div class="modal-form">
         <div class="form">
@@ -1465,6 +2790,8 @@
             <div class="footer-form"></div>
         </div>
     </div>
+
+    <div class="back-to-top more-btn"><i class="fas fa-angle-up"></i></div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
